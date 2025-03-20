@@ -4,7 +4,6 @@
 
 > Implementation of clean architecture based on Uncle Bob's book
 
-[![GitHub go.mod Go version of a Go module](https://img.shields.io/github/go-mod/go-version/waffle-frame/clean-architecture-template)](https://github.com/gomods/athens) ![Swagger Validator](https://img.shields.io/swagger/valid/3.0?specUrl=https://raw.githubusercontent.com/waffle-frame/clean-architecture-template/master/pkg/docs/swagger.yaml) [![wakatime](https://wakatime.com/badge/user/ec493241-c2a0-40a9-8ff1-637bdb54b2f1/project/d9c08ded-4928-49a3-8921-49aa3087f700.svg)](https://wakatime.com/badge/user/ec493241-c2a0-40a9-8ff1-637bdb54b2f1/project/d9c08ded-4928-49a3-8921-49aa3087f700)
 
 Clean Architecture was proposed by Robert Martin (also known as Uncle Bob) in his book "Clean Architecture: A Craftsman's Guide to Software Structure and Design" published in 2017. The goal of Clean Architecture is to create a flexible, extensible and easily maintainable software architecture.
 
@@ -125,6 +124,5 @@ make build
 
 ## TODO
 
-- [ ] Implement CI/CD
 - [ ] Add information to other readme files
 - [ ] Сreate a project that will have an example of using this blog-based template
