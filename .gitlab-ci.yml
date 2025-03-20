@@ -1,0 +1,24 @@
+
+
+build:
+  stage: build
+  script:
+    - chmod +x ./version.sh
+    - MODULE_VERSION=$(./version.sh)
+    - DOCKER_BUILDKIT=1 docker build -t $CI_REGISTRY_IMAGE:$MODULE_VERSION-$CI_COMMIT_SHORT_SHA .
+    - docker tag $CI_REGISTRY_IMAGE:$MODULE_VERSION-$CI_COMMIT_SHORT_SHA $CI_REGISTRY_IMAGE:latest
+    - docker push $CI_REGISTRY_IMAGE:$MODULE_VERSION-$CI_COMMIT_SHORT_SHA
+    - docker push $CI_REGISTRY_IMAGE:latest
+
+
+  only:
+    - dev
+
+deploy:
+  stage: deploy
+
+  script:
+    - cd /srv/project && docker compose down && docker compose pull && docker compose up -d
+
+  only:
+    - dev

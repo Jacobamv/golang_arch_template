@@ -1,0 +1,167 @@
+basePath: /api
+consumes:
+    - application/json
+info:
+    description: |-
+        ## Сервис Конвеера заявок Хумо для работы с внешними платформами
+
+        Данный сервис был создан чтобы сделать Application не зависимым от других платформ, единственное что можно будет заменять это его Bridge (от англ. Мост)
+    title: Application Bridge
+    version: 0.0.1
+paths:
+    /ping:
+        get:
+            description: '## A simple router to check server status'
+            operationId: ping
+            responses:
+                "200":
+                    description: "## Pong ! \U0001F94E"
+                    schema:
+                        $ref: '#/responses/ping/schema'
+            summary: Ping Pong!
+            tags:
+                - Ping
+produces:
+    - application/json
+responses:
+    accessDenied:
+        description: ""
+        schema:
+            properties:
+                message:
+                    example: access is denied
+                    type: string
+                    x-go-name: Message
+                payload:
+                    example: "null"
+                    x-go-name: Payload
+            type: object
+    badRequest:
+        description: ""
+        schema:
+            properties:
+                message:
+                    example: bad request
+                    type: string
+                    x-go-name: Message
+                payload:
+                    example: "null"
+                    x-go-name: Payload
+            type: object
+    conflict:
+        description: ""
+        schema:
+            properties:
+                message:
+                    example: conflict
+                    type: string
+                    x-go-name: Message
+                payload:
+                    example: "null"
+                    x-go-name: Payload
+            type: object
+    internalServer:
+        description: ""
+        schema:
+            properties:
+                message:
+                    example: internal server error
+                    type: string
+                    x-go-name: Message
+                payload:
+                    example: "null"
+                    x-go-name: Payload
+            type: object
+    notFound:
+        description: ""
+        schema:
+            properties:
+                message:
+                    example: notFound
+                    type: string
+                    x-go-name: Message
+                payload:
+                    example: "null"
+                    x-go-name: Payload
+            type: object
+    notImplementation:
+        description: ""
+        schema:
+            properties:
+                message:
+                    example: not implementation
+                    type: string
+                    x-go-name: Message
+                payload:
+                    example: "null"
+                    x-go-name: Payload
+            type: object
+    ping:
+        description: Ping
+        headers:
+            Data: {}
+        schema:
+            properties:
+                message:
+                    example: Успешно
+                    type: string
+                    x-go-name: Message
+                payload:
+                    example: Clean arch pong!
+                    type: string
+                    x-go-name: Payload
+            type: object
+    retryLimitExceeded:
+        description: ""
+        schema:
+            properties:
+                message:
+                    example: retry limit exceeded
+                    type: string
+                    x-go-name: Message
+                payload:
+                    example: "null"
+                    x-go-name: Payload
+            type: object
+    somethingWentWrong:
+        description: ""
+        schema:
+            properties:
+                message:
+                    example: something went wrong
+                    type: string
+                    x-go-name: Message
+                payload:
+                    example: "null"
+                    x-go-name: Payload
+            type: object
+    success:
+        description: ""
+        schema:
+            properties:
+                message:
+                    example: success
+                    type: string
+                    x-go-name: Message
+                payload:
+                    example: "null"
+                    x-go-name: Payload
+            type: object
+    unauthorized:
+        description: ""
+        schema:
+            properties:
+                message:
+                    example: unauthorized
+                    type: string
+                    x-go-name: Message
+                payload:
+                    example: "null"
+                    x-go-name: Payload
+            type: object
+securityDefinitions:
+    Bearer:
+        in: header
+        name: Authorization
+        type: apiKey
+swagger: "2.0"
