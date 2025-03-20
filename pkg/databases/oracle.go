@@ -6,9 +6,9 @@ import (
 	"log"
 	"time"
 
+	"github.com/Jacobamv/golang_arch_template/pkg/config"
 	_ "github.com/godror/godror"
 	"github.com/rs/zerolog"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/config"
 )
 
 // Oracle ...

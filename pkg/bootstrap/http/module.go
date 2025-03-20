@@ -1,9 +1,9 @@
 package http
 
 import (
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/bootstrap/http/middlewares"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/bootstrap/http/misc"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/bootstrap/http/server"
+	"github.com/Jacobamv/golang_arch_template/pkg/bootstrap/http/middlewares"
+	"github.com/Jacobamv/golang_arch_template/pkg/bootstrap/http/misc"
+	"github.com/Jacobamv/golang_arch_template/pkg/bootstrap/http/server"
 	"go.uber.org/fx"
 )
 

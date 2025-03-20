@@ -9,6 +9,74 @@ info:
     title: Application Bridge
     version: 0.0.1
 paths:
+    /auth/login:
+        post:
+            description: |-
+                ## Роут предназначен для авторизации ранее зарегистрированного пользователя
+                Используемый <b>Authorization Flow</b> подразумевает сначала проверка введенных пользователем <b>credential</b> (phone, password)
+                После успешной проверки, пользователю высылается на номер телефона OTP код с временем жизни в <code>1 минуту</code>
+            operationId: authLogin
+            parameters:
+                - in: body
+                  name: Body
+                  schema:
+                    properties:
+                        code:
+                            default: "1234"
+                            description: Одноразовый код
+                            maxLength: 4
+                            type: string
+                            x-go-name: Code
+                        password:
+                            default: '!qwerty123'
+                            description: Пароль
+                            maxLength: 100
+                            minLength: 8
+                            type: string
+                            x-go-name: Password
+                        phone:
+                            default: "992000331341"
+                            description: Телефонный номер
+                            pattern: 992\d{9}$
+                            type: string
+                            x-go-name: Phone
+                    required:
+                        - code
+                        - password
+                        - phone
+                    type: object
+            responses:
+                "200":
+                    description: '## Успешная авторизаиця'
+                    schema:
+                        $ref: '#/responses/success/schema'
+                "400":
+                    description: |-
+                        ## Неверный запрос
+                        Возможно, вам стоит перепроверить введенные данные
+
+                        Все возможные сообщения об ошибках в полезной нагрузке (payload):
+                        <ul>
+                          <li>Не верный OTP код</li>
+                          <li>Неправильный логин или пароль</li>
+                          <li>Одно или несколько полей пустые</li>
+                        </ul>
+                    schema:
+                        $ref: '#/responses/badRequest/schema'
+                "429":
+                    description: |-
+                        ## Retry Limit Exceeded
+                        Количество попыток: <code>4</code>
+                        Сбросить лимит после <code>5 минуты</code>
+                    schema:
+                        $ref: '#/responses/retryLimitExceeded/schema'
+                "500":
+                    description: Internal Server Error or Something went wrong
+                    schema:
+                        $ref: '#/responses/internalServer/schema'
+            summary: Вход в платформу
+            tags:
+                - Authorization
     /ping:
         get:
             description: '## A simple router to check server status'

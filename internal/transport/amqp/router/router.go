@@ -1,8 +1,8 @@
 package router
 
 import (
-	"gitlab.humo.tj/orzu/applications/bridge/internal/transport/amqp/consumers"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/brokers/rabbitmq"
+	"github.com/Jacobamv/golang_arch_template/internal/transport/amqp/consumers"
+	"github.com/Jacobamv/golang_arch_template/pkg/brokers/rabbitmq"
 )
 
 func NewRouter(c *consumers.Consumers, client rabbitmq.Client) {

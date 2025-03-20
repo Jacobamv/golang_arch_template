@@ -1,8 +1,8 @@
 package amqp
 
 import (
-	"gitlab.humo.tj/orzu/applications/bridge/internal/transport/amqp/consumers"
-	"gitlab.humo.tj/orzu/applications/bridge/internal/transport/amqp/router"
+	"github.com/Jacobamv/golang_arch_template/internal/transport/amqp/consumers"
+	"github.com/Jacobamv/golang_arch_template/internal/transport/amqp/router"
 	"go.uber.org/fx"
 )
 

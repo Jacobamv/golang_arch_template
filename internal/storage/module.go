@@ -1,7 +1,7 @@
 package storage
 
 import (
-	"gitlab.humo.tj/orzu/applications/bridge/internal/storage/example"
+	"github.com/Jacobamv/golang_arch_template/internal/storage/example"
 	"go.uber.org/fx"
 )
 

@@ -1,7 +1,7 @@
 package service
 
 import (
-	"gitlab.humo.tj/orzu/applications/bridge/internal/service/example"
+	"github.com/Jacobamv/golang_arch_template/internal/service/example"
 	"go.uber.org/fx"
 )
 

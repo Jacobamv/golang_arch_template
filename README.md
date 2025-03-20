@@ -43,7 +43,7 @@ The main idea of Clean Architecture is to divide the program into layers, where 
 Clone project from GitHub:
 
 ```bash
-git clone https://gitlab.humo.tj/orzu/applications/bridge.git
+git clone https://github.com/Jacobamv/golang_arch_template.git
 cd clean-architecture-template
 ```
 

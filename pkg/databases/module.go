@@ -3,7 +3,7 @@ package databases
 import (
 	"database/sql"
 
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/config"
+	"github.com/Jacobamv/golang_arch_template/pkg/config"
 
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/rs/zerolog"

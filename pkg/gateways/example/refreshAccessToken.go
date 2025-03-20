@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"time"
 
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/bootstrap/http/misc/response"
+	"github.com/Jacobamv/golang_arch_template/pkg/bootstrap/http/misc/response"
 )
 
 func (p *provider) RefreshAccessToken(ctx context.Context) (err error) {

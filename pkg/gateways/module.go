@@ -1,7 +1,7 @@
 package gateways
 
 import (
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/gateways/example"
+	"github.com/Jacobamv/golang_arch_template/pkg/gateways/example"
 	"go.uber.org/fx"
 )
 

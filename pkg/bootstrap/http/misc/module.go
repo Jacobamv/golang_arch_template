@@ -1,7 +1,7 @@
 package misc
 
 import (
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/bootstrap/http/misc/response"
+	"github.com/Jacobamv/golang_arch_template/pkg/bootstrap/http/misc/response"
 	"go.uber.org/fx"
 )
 

@@ -3,9 +3,9 @@ package brokers
 import (
 	"context"
 
+	"github.com/Jacobamv/golang_arch_template/pkg/brokers/rabbitmq"
+	"github.com/Jacobamv/golang_arch_template/pkg/config"
 	"github.com/rs/zerolog"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/brokers/rabbitmq"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/config"
 	"go.uber.org/fx"
 )
 

@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/config"
+	"github.com/Jacobamv/golang_arch_template/pkg/config"
 	"go.uber.org/fx"
 )
 

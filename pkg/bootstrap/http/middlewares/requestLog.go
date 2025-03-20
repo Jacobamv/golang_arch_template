@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"time"
 
+	"github.com/Jacobamv/golang_arch_template/pkg/bootstrap/http/misc/response/customRW"
 	"github.com/rs/zerolog"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/bootstrap/http/misc/response/customRW"
 )
 
 func (m *provider) RequestLog(next http.HandlerFunc) http.HandlerFunc {

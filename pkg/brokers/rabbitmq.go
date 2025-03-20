@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/brokers/rabbitmq"
+	"github.com/Jacobamv/golang_arch_template/pkg/brokers/rabbitmq"
 )
 
 const delay = 3 // reconnect after delay seconds

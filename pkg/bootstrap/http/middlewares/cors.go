@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/bootstrap/http/misc/response"
+	"github.com/Jacobamv/golang_arch_template/pkg/bootstrap/http/misc/response"
 )
 
 func (m *provider) CORS(next http.HandlerFunc) http.HandlerFunc {

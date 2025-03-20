@@ -28,7 +28,6 @@ type Params struct {
 	// Logger
 	Logger zerolog.Logger
 	// Database
-	OracleDB *sql.DB
 }
 
 // NewSExample ...
@@ -37,6 +36,5 @@ func NewSExample(params Params) SExample {
 		// Logger
 		logger: params.Logger,
 		// Database
-		oracleDB: params.OracleDB,
 	}
 }

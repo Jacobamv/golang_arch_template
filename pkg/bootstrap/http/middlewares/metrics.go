@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/Jacobamv/golang_arch_template/pkg/bootstrap/http/misc/response/customRW"
+	"github.com/Jacobamv/golang_arch_template/pkg/metrics"
 	"github.com/prometheus/client_golang/prometheus"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/bootstrap/http/misc/response/customRW"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/metrics"
 )
 
 func (m *provider) Metrics(next http.HandlerFunc) http.HandlerFunc {

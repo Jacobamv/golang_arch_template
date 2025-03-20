@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/bootstrap/http/misc/response"
+	"github.com/Jacobamv/golang_arch_template/pkg/bootstrap/http/misc/response"
 )
 
 // HPingPong — simple router to check server status

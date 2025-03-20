@@ -3,8 +3,8 @@ package example
 import (
 	"context"
 
+	"github.com/Jacobamv/golang_arch_template/pkg/config"
 	"github.com/rs/zerolog"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/config"
 	"go.uber.org/fx"
 )
 

@@ -5,15 +5,15 @@ import (
 
 	net_http "net/http"
 
-	"gitlab.humo.tj/orzu/applications/bridge/internal/service"
-	"gitlab.humo.tj/orzu/applications/bridge/internal/storage"
-	"gitlab.humo.tj/orzu/applications/bridge/internal/transport/http/handlers"
-	"gitlab.humo.tj/orzu/applications/bridge/internal/transport/http/router"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/bootstrap/http"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/config"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/databases"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/gateways"
-	"gitlab.humo.tj/orzu/applications/bridge/pkg/logger"
+	"github.com/Jacobamv/golang_arch_template/internal/service"
+	"github.com/Jacobamv/golang_arch_template/internal/storage"
+	"github.com/Jacobamv/golang_arch_template/internal/transport/http/handlers"
+	"github.com/Jacobamv/golang_arch_template/internal/transport/http/router"
+	"github.com/Jacobamv/golang_arch_template/pkg/bootstrap/http"
+	"github.com/Jacobamv/golang_arch_template/pkg/config"
+	"github.com/Jacobamv/golang_arch_template/pkg/databases"
+	"github.com/Jacobamv/golang_arch_template/pkg/gateways"
+	"github.com/Jacobamv/golang_arch_template/pkg/logger"
 	"go.uber.org/fx"
 )
 
